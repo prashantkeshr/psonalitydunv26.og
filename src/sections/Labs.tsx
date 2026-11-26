@@ -1,6 +1,9 @@
 import type { LucideIcon } from 'lucide-react';
 import { ScanFace, PersonStanding, Glasses, Ruler, Compass, Activity, Shirt, Repeat, Camera } from 'lucide-react';
+import { lazy, Suspense, type ReactNode } from 'react';
 import { Brackets, LiveDot, SectionHead } from '../components/ui';
+
+const FaceLabLive = lazy(() => import('../labs/FaceLabLive'));
 
 type Reading = { icon: LucideIcon; title: string; body: string };
 
@@ -12,6 +15,7 @@ function Lab({
   readings,
   stageIcon: StageIcon,
   stageLabel,
+  stage,
   flip = false,
 }: {
   id: string;
@@ -21,11 +25,13 @@ function Lab({
   readings: Reading[];
   stageIcon: LucideIcon;
   stageLabel: string;
+  /** The live lab; a placeholder stage is shown until it exists. */
+  stage?: ReactNode;
   flip?: boolean;
 }) {
   return (
     <section id={id} className="relative py-24 sm:py-32">
-      <div className={`page grid items-center gap-12 lg:grid-cols-2 ${flip ? 'lg:[&>*:first-child]:order-2' : ''}`}>
+      <div className={`page grid items-start gap-12 lg:grid-cols-2 ${flip ? 'lg:[&>*:first-child]:order-2' : ''}`}>
         <div>
           <SectionHead eyebrow={eyebrow} title={title} intro={intro} />
           <div className="mt-10 grid gap-3 sm:grid-cols-2">
@@ -41,6 +47,7 @@ function Lab({
 
         {/* The scanner stage: the live camera view lands here. */}
         <div data-reveal>
+          {stage ?? (
           <Brackets className="glass aspect-[4/5] overflow-hidden rounded-[28px] sm:aspect-[4/4.4]">
             <div className="grid-bg absolute inset-0 opacity-60" />
             <div className="pointer-events-none absolute inset-x-0 top-0 h-full">
@@ -64,6 +71,7 @@ function Lab({
               <LiveDot /> On-device
             </div>
           </Brackets>
+          )}
         </div>
       </div>
     </section>
@@ -89,6 +97,11 @@ export function FaceLab() {
       ]}
       stageIcon={ScanFace}
       stageLabel="Face scan"
+      stage={
+        <Suspense fallback={<div className="glass aspect-[4/3.6] rounded-[28px]" />}>
+          <FaceLabLive />
+        </Suspense>
+      }
     />
   );
 }

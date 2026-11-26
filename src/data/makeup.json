@@ -1,0 +1,125 @@
+{
+ "warm": {
+  "lips": [
+   {
+    "id": "terracotta",
+    "name": "Terracotta",
+    "hex": "#B5543A"
+   },
+   {
+    "id": "coral",
+    "name": "Coral",
+    "hex": "#E2674F"
+   },
+   {
+    "id": "warm_nude",
+    "name": "Warm nude",
+    "hex": "#B07A5E"
+   },
+   {
+    "id": "brick_red",
+    "name": "Brick red",
+    "hex": "#9E2B25"
+   }
+  ],
+  "blush": [
+   {
+    "id": "peach",
+    "name": "Peach",
+    "hex": "#F2A07B"
+   },
+   {
+    "id": "apricot",
+    "name": "Apricot",
+    "hex": "#E08A5C"
+   },
+   {
+    "id": "bronze",
+    "name": "Soft bronze",
+    "hex": "#B9784F"
+   }
+  ]
+ },
+ "cool": {
+  "lips": [
+   {
+    "id": "berry",
+    "name": "Berry",
+    "hex": "#8E2C4E"
+   },
+   {
+    "id": "rose",
+    "name": "Rose pink",
+    "hex": "#C25A7C"
+   },
+   {
+    "id": "mauve",
+    "name": "Mauve",
+    "hex": "#9C6A80"
+   },
+   {
+    "id": "blue_red",
+    "name": "Blue red",
+    "hex": "#B0172F"
+   }
+  ],
+  "blush": [
+   {
+    "id": "pink",
+    "name": "Soft pink",
+    "hex": "#E59AAE"
+   },
+   {
+    "id": "plum",
+    "name": "Plum",
+    "hex": "#A0577A"
+   },
+   {
+    "id": "rose_blush",
+    "name": "Rose",
+    "hex": "#D27A8E"
+   }
+  ]
+ },
+ "neutral": {
+  "lips": [
+   {
+    "id": "dusty_rose",
+    "name": "Dusty rose",
+    "hex": "#B86F78"
+   },
+   {
+    "id": "soft_red",
+    "name": "Soft red",
+    "hex": "#B23A3A"
+   },
+   {
+    "id": "nude_pink",
+    "name": "Nude pink",
+    "hex": "#C08A86"
+   },
+   {
+    "id": "cinnamon",
+    "name": "Cinnamon",
+    "hex": "#9A5640"
+   }
+  ],
+  "blush": [
+   {
+    "id": "rosy_peach",
+    "name": "Rosy peach",
+    "hex": "#E8977F"
+   },
+   {
+    "id": "soft_berry",
+    "name": "Soft berry",
+    "hex": "#C06A7E"
+   },
+   {
+    "id": "nude_blush",
+    "name": "Nude",
+    "hex": "#D19B87"
+   }
+  ]
+ }
+}
