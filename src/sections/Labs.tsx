@@ -4,6 +4,7 @@ import { lazy, Suspense, type ReactNode } from 'react';
 import { Brackets, LiveDot, SectionHead } from '../components/ui';
 
 const FaceLabLive = lazy(() => import('../labs/FaceLabLive'));
+const BodyLabLive = lazy(() => import('../labs/BodyLabLive'));
 
 type Reading = { icon: LucideIcon; title: string; body: string };
 
@@ -126,6 +127,11 @@ export function BodyLab() {
       ]}
       stageIcon={PersonStanding}
       stageLabel="Body scan"
+      stage={
+        <Suspense fallback={<div className="glass aspect-[4/4.4] rounded-[28px]" />}>
+          <BodyLabLive />
+        </Suspense>
+      }
     />
   );
 }
