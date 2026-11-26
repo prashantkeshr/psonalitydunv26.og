@@ -1,0 +1,352 @@
+[
+ {
+  "id": "squat",
+  "name": "Bodyweight squat",
+  "category": "strength",
+  "motion": "squat",
+  "dose": "2 sets of 10",
+  "summary": "Strengthens legs and hips.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "arm_raise",
+  "name": "Overhead arm raise",
+  "category": "shoulder",
+  "motion": "mountain_pose",
+  "dose": "2 sets of 10",
+  "summary": "Improves shoulder mobility.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "knee_raise",
+  "name": "Standing knee raises",
+  "category": "cardio",
+  "motion": "march",
+  "dose": "20 raises (10 each leg)",
+  "summary": "Gentle cardio and hip mobility.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "plank",
+  "name": "Plank",
+  "category": "core",
+  "motion": "plank",
+  "dose": "Hold 20–30 seconds, 2 times",
+  "summary": "Builds core endurance.",
+  "level": "beginner",
+  "hold": true
+ },
+ {
+  "id": "wall_sit",
+  "name": "Wall sit",
+  "category": "strength",
+  "motion": "wall_sit",
+  "dose": "Hold 20–30 seconds, 2 times",
+  "summary": "Strengthens thighs with no impact.",
+  "level": "beginner",
+  "hold": true
+ },
+ {
+  "id": "shoulder_rolls",
+  "name": "Shoulder rolls",
+  "category": "shoulder",
+  "motion": "shoulder_roll",
+  "dose": "10 backward, 10 forward",
+  "summary": "Loosens tight shoulders.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "wall_angels",
+  "name": "Wall angels",
+  "category": "upperBack",
+  "motion": "overhead_press",
+  "dose": "8 slow repetitions",
+  "summary": "Encourages an upright upper back.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "cat_cow",
+  "name": "Cat–cow",
+  "category": "lowerBack",
+  "motion": "cat_cow",
+  "dose": "8–10 slow cycles",
+  "summary": "Gentle spine mobility.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "glute_bridge",
+  "name": "Glute bridge",
+  "category": "lowerBack",
+  "motion": "glute_bridge",
+  "dose": "10 repetitions",
+  "summary": "Strengthens hips and supports the lower back.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "child_pose",
+  "name": "Child's pose",
+  "category": "yoga",
+  "motion": "child_pose",
+  "dose": "30–60 seconds",
+  "summary": "A calm resting stretch.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "hamstring_stretch",
+  "name": "Standing hamstring stretch",
+  "category": "stretching",
+  "motion": "forward_fold",
+  "dose": "2 times each leg",
+  "summary": "Stretches the back of the thighs.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "bird_dog",
+  "name": "Bird dog",
+  "category": "core",
+  "motion": "bird_dog",
+  "dose": "8 each side",
+  "summary": "Improves balance and core control.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "push_up",
+  "name": "Push-up",
+  "category": "strength",
+  "motion": "push_up",
+  "dose": "3 sets of 8–12",
+  "summary": "Builds chest, shoulders and arms.",
+  "level": "intermediate",
+  "hold": false
+ },
+ {
+  "id": "incline_push_up",
+  "name": "Incline push-up",
+  "category": "strength",
+  "motion": "incline_push_up",
+  "dose": "3 sets of 10–15",
+  "summary": "An easier push-up with hands on a table or wall.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "reverse_lunge",
+  "name": "Reverse lunge",
+  "category": "strength",
+  "motion": "reverse_lunge",
+  "dose": "3 sets of 8 per leg",
+  "summary": "Strengthens legs and glutes, one side at a time.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "chair_dip",
+  "name": "Chair dip",
+  "category": "strength",
+  "motion": "dip",
+  "dose": "3 sets of 8–12",
+  "summary": "Works the back of the arms using a sturdy chair.",
+  "level": "intermediate",
+  "hold": false
+ },
+ {
+  "id": "backpack_row",
+  "name": "Backpack row",
+  "category": "strength",
+  "motion": "row",
+  "dose": "3 sets of 10–12",
+  "summary": "Strengthens the upper back with a loaded bag.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "calf_raise",
+  "name": "Calf raise",
+  "category": "strength",
+  "motion": "calf_raise",
+  "dose": "3 sets of 15",
+  "summary": "Strengthens the calves and ankles.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "brisk_walk",
+  "name": "Brisk walk",
+  "category": "cardio",
+  "motion": "walk",
+  "dose": "30 minutes",
+  "summary": "Steady cardio that is easy on the joints.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "surya_namaskar",
+  "name": "Surya Namaskar (sun salutation)",
+  "category": "yoga",
+  "motion": "surya_namaskar",
+  "dose": "6–12 rounds, slowly",
+  "summary": "A flowing sequence that warms up the whole body and builds mobility.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "mountain_pose",
+  "name": "Mountain pose (Tadasana)",
+  "category": "yoga",
+  "motion": "mountain_pose",
+  "dose": "Hold 5 slow breaths",
+  "summary": "The base of every standing pose: tall, steady and even.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "tree_pose",
+  "name": "Tree pose (Vrikshasana)",
+  "category": "yoga",
+  "motion": "tree_pose",
+  "dose": "5 breaths each side",
+  "summary": "Balance on one leg to build focus and ankle strength.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "warrior_1",
+  "name": "Warrior I (Virabhadrasana I)",
+  "category": "yoga",
+  "motion": "warrior_1",
+  "dose": "5 breaths each side",
+  "summary": "A strong lunge with arms overhead.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "warrior_2",
+  "name": "Warrior II (Virabhadrasana II)",
+  "category": "yoga",
+  "motion": "warrior_2",
+  "dose": "5 breaths each side",
+  "summary": "Wide stance, arms out: builds leg strength and stamina.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "triangle",
+  "name": "Triangle pose (Trikonasana)",
+  "category": "yoga",
+  "motion": "triangle",
+  "dose": "5 breaths each side",
+  "summary": "A side stretch for the waist, hamstrings and chest.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "chair_pose",
+  "name": "Chair pose (Utkatasana)",
+  "category": "yoga",
+  "motion": "chair_pose",
+  "dose": "Hold 5 slow breaths",
+  "summary": "Sit back into an invisible chair to warm the legs.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "goddess_pose",
+  "name": "Goddess pose (Utkata Konasana)",
+  "category": "yoga",
+  "motion": "goddess_pose",
+  "dose": "Hold 5 slow breaths",
+  "summary": "A wide squat that opens the hips and strengthens the legs.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "downward_dog",
+  "name": "Downward dog (Adho Mukha Svanasana)",
+  "category": "yoga",
+  "motion": "downward_dog",
+  "dose": "Hold 5 slow breaths",
+  "summary": "An inverted V that stretches the back and legs.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "low_lunge",
+  "name": "Low lunge (Anjaneyasana)",
+  "category": "yoga",
+  "motion": "low_lunge",
+  "dose": "5 breaths each side",
+  "summary": "Opens the front of the hips after long sitting.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "cobra",
+  "name": "Cobra (Bhujangasana)",
+  "category": "yoga",
+  "motion": "cobra",
+  "dose": "3–5 breaths, 3 times",
+  "summary": "A gentle backbend for the spine and chest.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "bridge_pose",
+  "name": "Bridge pose (Setu Bandhasana)",
+  "category": "yoga",
+  "motion": "bridge_pose",
+  "dose": "Hold 5 slow breaths",
+  "summary": "Lifts the hips to strengthen the back and glutes.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "boat_pose",
+  "name": "Boat pose (Navasana)",
+  "category": "yoga",
+  "motion": "boat_pose",
+  "dose": "3–5 breaths, 3 times",
+  "summary": "Balance on the sit bones to build core strength.",
+  "level": "intermediate",
+  "hold": false
+ },
+ {
+  "id": "forward_fold",
+  "name": "Standing forward fold (Uttanasana)",
+  "category": "yoga",
+  "motion": "forward_fold",
+  "dose": "Hold 5 slow breaths",
+  "summary": "Releases the back of the legs and the spine.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "seated_fold",
+  "name": "Seated forward bend (Paschimottanasana)",
+  "category": "yoga",
+  "motion": "seated_fold",
+  "dose": "Hold 5 slow breaths",
+  "summary": "A calming stretch for the back and hamstrings.",
+  "level": "beginner",
+  "hold": false
+ },
+ {
+  "id": "seated_breath",
+  "name": "Calm breathing (Pranayama)",
+  "category": "yoga",
+  "motion": "seated_breath",
+  "dose": "2–5 minutes",
+  "summary": "Slow breathing to settle the mind: in for 4, out for 6.",
+  "level": "beginner",
+  "hold": false
+ }
+]
