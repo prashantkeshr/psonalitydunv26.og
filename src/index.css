@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --iris: linear-gradient(110deg, #e14bd7 0%, #7c5cff 45%, #29d8f2 100%);
+  color-scheme: dark;
+}
+
+html {
+  background: #06070a;
+  -webkit-tap-highlight-color: transparent;
+}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+
+body {
+  @apply bg-ink font-sans text-[15px] leading-relaxed text-white antialiased;
+  overflow-x: hidden;
+}
+
+::selection { background: rgba(124, 92, 255, 0.45); }
+
+@layer components {
+  .page { @apply mx-auto w-full max-w-page px-4 sm:px-6 lg:px-8; }
+
+  .iris-text {
+    background: var(--iris);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em] text-mist;
+  }
+  .eyebrow::before {
+    content: '';
+    @apply h-px w-6;
+    background: var(--iris);
+  }
+
+  .h-display { @apply font-display font-semibold tracking-tight text-white; }
+
+  /* Frosted panel with a hairline border that brightens on hover. */
+  .glass {
+    @apply relative rounded-3xl border border-line bg-white/[0.03] backdrop-blur-xl;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  .glass-hover { @apply transition duration-300 hover:border-white/20 hover:bg-white/[0.05]; }
+
+  .btn {
+    @apply relative inline-flex select-none items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition;
+  }
+  .btn-iris { background: var(--iris); @apply text-white shadow-[0_10px_40px_-10px_rgba(124,92,255,0.8)]; }
+  .btn-iris:hover { filter: brightness(1.1); }
+  .btn-ghost { @apply border border-white/15 bg-white/[0.03] text-white hover:border-white/35; }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-white/[0.03] px-3 py-1 text-xs text-mist;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  .noise::after {
+    content: '';
+    @apply pointer-events-none absolute inset-0 opacity-[0.035];
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Corner brackets for "scanner" frames. */
+  .brackets { @apply relative; }
+  .brackets > .br { @apply pointer-events-none absolute z-10 h-6 w-6 border-teal/70; }
+  .brackets > .br.tl { @apply left-4 top-4 rounded-tl-lg border-l-2 border-t-2; }
+  .brackets > .br.tr { @apply right-4 top-4 rounded-tr-lg border-r-2 border-t-2; }
+  .brackets > .br.bl { @apply bottom-4 left-4 rounded-bl-lg border-b-2 border-l-2; }
+  .brackets > .br.bc { @apply bottom-4 right-4 rounded-br-lg border-b-2 border-r-2; }
+}
+
+[data-reveal] { opacity: 0; transform: translateY(28px); }
+.no-motion [data-reveal] { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; }
+}
