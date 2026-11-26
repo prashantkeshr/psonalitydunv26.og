@@ -32,10 +32,12 @@ function Lab({
 }) {
   return (
     <section id={id} className="relative py-24 sm:py-32">
-      <div className={`page grid items-start gap-12 lg:grid-cols-2 ${flip ? 'lg:[&>*:first-child]:order-2' : ''}`}>
-        <div>
+      <div className="page grid items-start gap-x-12 gap-y-8 lg:grid-cols-2 lg:grid-rows-[auto_1fr]">
+        <div className={flip ? 'lg:col-start-2' : ''}>
           <SectionHead eyebrow={eyebrow} title={title} intro={intro} />
-          <div className="mt-10 grid gap-3 sm:grid-cols-2">
+        </div>
+        <div className={`order-3 lg:order-none ${flip ? 'lg:col-start-2' : ''}`}>
+          <div className="grid gap-3 sm:grid-cols-2">
             {readings.map(({ icon: Icon, title: t, body }, i) => (
               <div key={t} className="glass glass-hover p-5" data-reveal data-reveal-delay={String(i * 0.05)}>
                 <Icon size={20} strokeWidth={1.5} className="text-teal" />
@@ -47,7 +49,7 @@ function Lab({
         </div>
 
         {/* The scanner stage: the live camera view lands here. */}
-        <div data-reveal>
+        <div data-reveal className={`order-2 lg:order-none lg:row-span-2 lg:row-start-1 ${flip ? 'lg:col-start-1' : 'lg:col-start-2'}`}>
           {stage ?? (
           <Brackets className="glass aspect-[4/5] overflow-hidden rounded-[28px] sm:aspect-[4/4.4]">
             <div className="grid-bg absolute inset-0 opacity-60" />

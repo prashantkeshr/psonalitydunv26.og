@@ -7,8 +7,7 @@ import { useEffect, useRef, useState } from 'react';
  *  - beacons and web sockets,
  *  - any request to another site.
  * Plain same-site GETs (this page's own images and scripts) cannot carry
- * camera data and are not counted. The site's fonts come from Google Fonts
- * and are loaded when the page opens, so they are not counted either.
+ * camera data and are not counted.
  */
 type Listener = (n: number) => void;
 let count = 0;
@@ -18,11 +17,10 @@ const bump = () => {
   listeners.forEach((l) => l(count));
 };
 
-const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
 const otherSite = (url: string) => {
   try {
     const u = new URL(url, location.href);
-    return u.origin !== location.origin && !FONT_HOSTS.includes(u.hostname);
+    return u.origin !== location.origin;
   } catch {
     return false;
   }

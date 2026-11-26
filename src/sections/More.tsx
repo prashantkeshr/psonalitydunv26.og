@@ -129,7 +129,7 @@ export function Everything() {
 export function Privacy() {
   const points: [LucideIcon, string, string][] = [
     [Cpu, 'Computed on your device', 'Face and body models run inside the app (and this page) — frames never leave memory.'],
-    [ShieldCheck, 'Zero uploads', 'No account, no cloud, no analytics on your photos. This page counts the bytes for you.'],
+    [ShieldCheck, 'Zero uploads', 'No account, no cloud, no cookies or analytics — on this site or in the app. The labs count anything sent while you scan.'],
     [Lock, 'Locked & encrypted', 'App lock with your fingerprint, and backups encrypted with a password only you know.'],
   ];
   return (
@@ -252,7 +252,9 @@ export function Footer() {
           <img src="/app/icon-512.png" alt="" className="h-7 w-7 rounded-lg" />
           <span>Personality · by dhurta.Inc</span>
         </div>
-        <div className="flex gap-5">
+        <div className="flex flex-wrap justify-center gap-5">
+          <a href="/privacy/" className="hover:text-white">Privacy</a>
+          <a href="/credits/" className="hover:text-white">Credits</a>
           <a href="mailto:support@dhurta.org" className="hover:text-white">
             support@dhurta.org
           </a>

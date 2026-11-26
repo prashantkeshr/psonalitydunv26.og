@@ -13,8 +13,8 @@ export default {
         ember: '#FF7A45',
       },
       fontFamily: {
-        display: ['Sora', 'system-ui', 'sans-serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Sora Variable"', 'Sora', 'system-ui', 'sans-serif'],
+        sans: ['"Inter Variable"', 'Inter', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
       maxWidth: { page: '1240px' },
