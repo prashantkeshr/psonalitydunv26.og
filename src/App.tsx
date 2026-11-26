@@ -2,6 +2,7 @@ import Nav from './components/Nav';
 import Hero from './sections/Hero';
 import { FaceLab, BodyLab } from './sections/Labs';
 import Skills from './sections/Skills';
+import Yoga from './sections/Yoga';
 import { Food, YourDay } from './sections/Daily';
 import { Style, Coach, Everything, Privacy, AppTour, Download, Footer } from './sections/More';
 import { useReveals, useSmoothScroll } from './lib/motion';
@@ -18,6 +19,7 @@ export default function App() {
         <FaceLab />
         <BodyLab />
         <Skills />
+        <Yoga />
         <YourDay />
         <Food />
         <Style />

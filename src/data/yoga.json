@@ -1,0 +1,135 @@
+[
+ {
+  "id": "yoga_sun_flow",
+  "title": "Morning sun flow",
+  "summary": "Wake up the whole body: sun salutation and standing poses.",
+  "steps": [
+   {
+    "id": "mountain_pose",
+    "name": "Mountain pose (Tadasana)",
+    "motion": "mountain_pose",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "surya_namaskar",
+    "name": "Surya Namaskar (sun salutation)",
+    "motion": "surya_namaskar",
+    "seconds": 90,
+    "reps": null
+   },
+   {
+    "id": "warrior_1",
+    "name": "Warrior I (Virabhadrasana I)",
+    "motion": "warrior_1",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "warrior_2",
+    "name": "Warrior II (Virabhadrasana II)",
+    "motion": "warrior_2",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "forward_fold",
+    "name": "Standing forward fold (Uttanasana)",
+    "motion": "forward_fold",
+    "seconds": 30,
+    "reps": null
+   }
+  ]
+ },
+ {
+  "id": "yoga_balance",
+  "title": "Balance and strength",
+  "summary": "Steady standing poses for focus and leg strength.",
+  "steps": [
+   {
+    "id": "tree_pose",
+    "name": "Tree pose (Vrikshasana)",
+    "motion": "tree_pose",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "chair_pose",
+    "name": "Chair pose (Utkatasana)",
+    "motion": "chair_pose",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "goddess_pose",
+    "name": "Goddess pose (Utkata Konasana)",
+    "motion": "goddess_pose",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "triangle",
+    "name": "Triangle pose (Trikonasana)",
+    "motion": "triangle",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "boat_pose",
+    "name": "Boat pose (Navasana)",
+    "motion": "boat_pose",
+    "seconds": 20,
+    "reps": null
+   }
+  ]
+ },
+ {
+  "id": "yoga_evening_calm",
+  "title": "Evening calm",
+  "summary": "Floor poses and slow breathing to wind down.",
+  "steps": [
+   {
+    "id": "cat_cow",
+    "name": "Cat–cow",
+    "motion": "cat_cow",
+    "seconds": 45,
+    "reps": null
+   },
+   {
+    "id": "low_lunge",
+    "name": "Low lunge (Anjaneyasana)",
+    "motion": "low_lunge",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "cobra",
+    "name": "Cobra (Bhujangasana)",
+    "motion": "cobra",
+    "seconds": 30,
+    "reps": null
+   },
+   {
+    "id": "child_pose",
+    "name": "Child's pose",
+    "motion": "child_pose",
+    "seconds": 45,
+    "reps": null
+   },
+   {
+    "id": "seated_fold",
+    "name": "Seated forward bend (Paschimottanasana)",
+    "motion": "seated_fold",
+    "seconds": 45,
+    "reps": null
+   },
+   {
+    "id": "seated_breath",
+    "name": "Calm breathing (Pranayama)",
+    "motion": "seated_breath",
+    "seconds": 90,
+    "reps": null
+   }
+  ]
+ }
+]

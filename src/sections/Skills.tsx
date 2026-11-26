@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MapPin, ShieldAlert, Target, Swords, Globe2, Landmark } from 'lucide-react';
 import disciplines from '../data/disciplines.json';
 import { SectionHead } from '../components/ui';
+import Figure from '../components/Figure';
 
 type Discipline = (typeof disciplines)[number];
 const fighting = disciplines.filter((d) => d.family !== 'mindbody');
@@ -84,6 +85,11 @@ export default function Skills() {
               className="pointer-events-none absolute -top-24 right-0 h-64 w-64 rounded-full opacity-30 blur-3xl transition-colors duration-700"
               style={{ background: tint(pick.hue) }}
             />
+            <div className="relative -mx-2 -mt-2 mb-4 h-56 overflow-hidden rounded-2xl border border-line bg-ink/60 sm:h-64">
+              <div className="grid-bg absolute inset-0 opacity-70" />
+              {pick.motion && <Figure key={pick.id} motion={pick.motion} label={`${pick.name} demonstration`} className="relative" />}
+              <span className="absolute bottom-3 left-3 font-mono text-[10px] uppercase tracking-[0.18em] text-mist">Solo drill · demonstrated</span>
+            </div>
             <p className="font-mono text-[11px] uppercase tracking-[0.2em]" style={{ color: tint(pick.hue) }}>
               {pick.region}
             </p>

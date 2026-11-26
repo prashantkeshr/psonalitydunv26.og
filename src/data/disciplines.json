@@ -12,7 +12,8 @@
    "Breathe through the nose and let the breath set the pace.",
    "Little and often beats long and rare: 10 minutes a day adds up.",
    "Soft knees are fine in folds: the spine matters more than the legs."
-  ]
+  ],
+  "motion": "tree_pose"
  },
  {
   "id": "self_defence",
@@ -27,7 +28,8 @@
    "Notice exits and people around you; awareness prevents most trouble.",
    "Keep open hands up in front of you: it looks calm and protects your face.",
    "Use a loud voice; shouting 'Stop!' draws attention and help."
-  ]
+  ],
+  "motion": "palm_strike"
  },
  {
   "id": "boxing",
@@ -42,7 +44,8 @@
    "Chin down, hands up, elbows in: always return to this guard.",
    "Never fully lock the elbow when shadow boxing.",
    "Exhale sharply with every punch."
-  ]
+  ],
+  "motion": "jab_cross"
  },
  {
   "id": "karate",
@@ -57,7 +60,8 @@
    "Pull the opposite fist back to the hip as you punch (hikite).",
    "Keep stances low but knees over toes.",
    "Slow, perfect reps teach more than fast, sloppy ones."
-  ]
+  ],
+  "motion": "front_stance_punch"
  },
  {
   "id": "muay_thai",
@@ -72,7 +76,8 @@
    "Pull the hands down as the knee drives up.",
    "Pivot the standing foot on kicks to protect the knee.",
    "Keep your guard up even when kicking."
-  ]
+  ],
+  "motion": "knee_strike"
  },
  {
   "id": "kung_fu",
@@ -87,7 +92,8 @@
    "Hold horse stance a few seconds longer each week.",
    "Sink your weight; don't lean forward over your toes.",
    "Relaxed shoulders make strikes faster."
-  ]
+  ],
+  "motion": "horse_stance_punch"
  },
  {
   "id": "kalaripayattu",
@@ -102,7 +108,8 @@
    "Warm up hips and hamstrings before leg swings; height comes from flexibility, not force.",
    "Keep the standing knee soft and the supporting foot flat for balance.",
    "In vadivu, hold each stance and breathe slowly through the nose before moving on."
-  ]
+  ],
+  "motion": "kalari_leg_swing"
  },
  {
   "id": "kushti",
@@ -117,7 +124,8 @@
    "Breathe out as you swoop forward in dand, in as you push back.",
    "For baithak, let the heels rise and swing the arms for rhythm.",
    "Traditional sets are high-rep but slow: quality before count."
-  ]
+  ],
+  "motion": "hindu_pushup"
  },
  {
   "id": "gatka",
@@ -132,7 +140,8 @@
    "Pentra comes first: step lightly in rhythm before adding strikes.",
    "Strike from the shoulder and hips, not just the wrist.",
    "Return the stick to guard after every strike."
-  ]
+  ],
+  "motion": "gatka_strike"
  },
  {
   "id": "silambam",
@@ -147,7 +156,8 @@
    "Learn the footwork without the stick first; the spins follow the feet.",
    "Grip loosely and let the wrists turn; a tight grip tires the forearms fast.",
    "Start with slow figure-eights on each side before linking them."
-  ]
+  ],
+  "motion": "silambam_spin"
  },
  {
   "id": "lathi_khela",
@@ -162,7 +172,8 @@
    "Hold the lathi with both hands about shoulder-width apart.",
    "Block with the middle of the stick, between your hands.",
    "Step as you strike so the power comes from the legs."
-  ]
+  ],
+  "motion": "lathi_block"
  },
  {
   "id": "mardani_khel",
@@ -177,7 +188,8 @@
    "Speed is the last thing to add: smooth circles first, fast ones later.",
    "Keep elbows close and let the forearms do the spinning.",
    "Breathe out on each change of direction."
-  ]
+  ],
+  "motion": "stick_twirl"
  },
  {
   "id": "thang_ta",
@@ -192,7 +204,8 @@
    "Stay low and move from the hips, keeping your head level.",
    "Turn on the balls of your feet, not the heels.",
    "Flow between stances slowly first; the art values smoothness over power."
-  ]
+  ],
+  "motion": "thangta_stance"
  },
  {
   "id": "musti_yuddha",
@@ -207,6 +220,7 @@
    "Hands come back to guard as fast as they go out.",
    "Turn the back foot and hip into each rear-hand strike.",
    "Keep strikes shoulder-high in shadow work to protect your elbows."
-  ]
+  ],
+  "motion": "jab_cross"
  }
 ]
