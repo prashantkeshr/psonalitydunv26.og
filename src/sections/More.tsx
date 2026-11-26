@@ -1,10 +1,12 @@
 import {
-  Scissors, Palette, Glasses, Shirt, CalendarDays, Sparkles, MessageSquareText, WifiOff, Lock, HardDriveDownload,
+  Scissors, Palette, Glasses, Shirt, CalendarDays, Sparkles, MessageSquareText, Lock, HardDriveDownload,
   Languages, LayoutGrid, Bell, Target, Trophy, Moon, Droplets, Scale, Fingerprint, Cpu, ShieldCheck, Smartphone,
   ArrowUpRight,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { Counter, Phone, SectionHead } from '../components/ui';
+import StyleQuiz from './StyleQuiz';
+import CoachDemo from './CoachDemo';
 
 export function Style() {
   const items: [LucideIcon, string, string][] = [
@@ -46,6 +48,9 @@ export function Style() {
           <Phone src="/app/03_style.png" alt="Style tab in the app" />
         </div>
       </div>
+      <div className="page relative mt-16">
+        <StyleQuiz />
+      </div>
     </section>
   );
 }
@@ -54,20 +59,8 @@ export function Coach() {
   return (
     <section className="relative py-24 sm:py-32">
       <div className="page grid items-center gap-12 lg:grid-cols-2">
-        <div className="glass order-2 p-6 sm:p-8 lg:order-1" data-reveal>
-          <div className="flex items-center gap-2 text-xs text-mist">
-            <WifiOff size={14} strokeWidth={1.6} className="text-teal" /> Runs on your phone · works offline
-          </div>
-          <div className="mt-6 grid gap-3 text-sm">
-            <p className="ml-auto max-w-[80%] rounded-2xl rounded-br-md bg-white/[0.08] px-4 py-3">
-              How do I fix rounded shoulders?
-            </p>
-            <div className="max-w-[88%] rounded-2xl rounded-bl-md border border-line bg-white/[0.02] px-4 py-3 text-white/85">
-              Start with wall angels and chin tucks, 2 sets of 10 a day, and a posture check every few hours. Open
-              <span className="mx-1 rounded-md bg-teal/15 px-1.5 py-0.5 text-teal">Posture exercises</span>
-              to follow along with the figure.
-            </div>
-          </div>
+        <div className="order-2 lg:order-1">
+          <CoachDemo />
         </div>
         <div className="order-1 lg:order-2">
           <SectionHead
@@ -77,7 +70,7 @@ export function Coach() {
                 Answers from <span className="iris-text">inside the app.</span>
               </>
             }
-            intro="Ask about training, food, posture or style. An on-device AI coach answers from Personality's own guides and links you straight to the right screen — private, and available even in airplane mode."
+            intro="Ask about training, food, posture, skin or style. In the app, an on-device AI coach answers from Personality's own guides and links you straight to the right screen — private, and available even in airplane mode. Try a few real answers here."
           />
         </div>
       </div>
