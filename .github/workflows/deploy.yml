@@ -43,3 +43,16 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Tell Bing, Yandex and other IndexNow engines which pages exist, right
+  # after each deploy (the list is published at /indexnow.json).
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify IndexNow
+        run: |
+          sleep 30
+          curl -sf https://personality.dhurta.org/indexnow.json -o indexnow.json
+          curl -s -o /dev/null -w "IndexNow: %{http_code}\n" -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" --data @indexnow.json

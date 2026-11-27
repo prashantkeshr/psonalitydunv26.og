@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://personality.dhurta.org/sitemap.xml

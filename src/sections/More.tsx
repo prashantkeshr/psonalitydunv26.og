@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { Counter, Phone, SectionHead } from '../components/ui';
+import { HOME_FAQ } from '../site/content';
 import StyleQuiz from './StyleQuiz';
 import CoachDemo from './CoachDemo';
 
@@ -195,13 +196,7 @@ export function AppTour() {
 }
 
 export function Download() {
-  const faq: [string, string][] = [
-    ['When can I get it?', 'Personality is coming soon to Android. iPhone follows later.'],
-    ['Does it need the internet?', 'No. Everything runs on your phone. The internet is only used if you choose to download extra content packs.'],
-    ['Are my photos uploaded?', 'Never. Face and body scans are processed on your device and are not stored unless you save a snapshot yourself.'],
-    ['Is it for beginners?', 'Yes. Plans start where you are, every move is demonstrated, and the app adjusts as you get stronger.'],
-    ['Is martial arts practice safe?', 'The app teaches solo practice — stances, footwork, shadow drills and conditioning — with safety notes. Partner and weapon work belongs with a qualified teacher.'],
-  ];
+  const faq = HOME_FAQ;
   return (
     <section id="download" className="relative py-24 sm:py-32">
       <div className="page grid gap-14 lg:grid-cols-2">
@@ -218,8 +213,14 @@ export function Download() {
             <span className="btn btn-iris cursor-default">
               <Smartphone size={17} strokeWidth={1.6} /> Coming soon on Google Play
             </span>
-            <a className="btn btn-ghost" href="mailto:support@dhurta.org">
-              Contact us <ArrowUpRight size={16} strokeWidth={1.6} />
+            <a
+              className="btn btn-ghost"
+              href="mailto:support@dhurta.org?subject=Personality%20waitlist&body=Please%20let%20me%20know%20when%20Personality%20is%20available."
+            >
+              Notify me at launch <ArrowUpRight size={16} strokeWidth={1.6} />
+            </a>
+            <a className="btn btn-ghost" href="/contact/">
+              API &amp; partnerships <ArrowUpRight size={16} strokeWidth={1.6} />
             </a>
           </div>
         </div>
@@ -241,26 +242,5 @@ export function Download() {
         </div>
       </div>
     </section>
-  );
-}
-
-export function Footer() {
-  return (
-    <footer className="border-t border-line py-10">
-      <div className="page flex flex-col items-center justify-between gap-4 text-sm text-mist sm:flex-row">
-        <div className="flex items-center gap-2.5">
-          <img src="/app/icon-512.png" alt="" className="h-7 w-7 rounded-lg" />
-          <span>Personality · by dhurta.Inc</span>
-        </div>
-        <div className="flex flex-wrap justify-center gap-5">
-          <a href="/privacy/" className="hover:text-white">Privacy</a>
-          <a href="/credits/" className="hover:text-white">Credits</a>
-          <a href="mailto:support@dhurta.org" className="hover:text-white">
-            support@dhurta.org
-          </a>
-          <span>© {new Date().getFullYear()} dhurta.Inc</span>
-        </div>
-      </div>
-    </footer>
   );
 }

@@ -6,4 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: { target: 'es2022', chunkSizeWarningLimit: 900 },
+  // Bundle these into the prerender build; they don't load as plain Node ESM.
+  ssr: { noExternal: ['gsap', 'lenis', 'lucide-react'] },
 });
